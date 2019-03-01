@@ -1,0 +1,108 @@
+:root {
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+.desk{
+	margin: 0 auto;
+	border: 20px solid brown;
+width: 840px;
+height: 840px;
+}
+
+.pos{
+	clear: both;
+	height: 800px;
+	width: 800px;
+	margin: 0 auto;
+	background: #000;
+	position: relative;
+}
+
+.line1 > div{
+	margin-left: 100px;
+	background: #fff;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+
+
+.line2 > div{
+	margin-right:  100px;
+	background: #fff;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+.firstW > div::before{
+	content: '';
+	background-image: url(../images/white.png); 
+	float: right;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+	margin-right:100px;
+}
+
+
+.secondW > div::after{
+	content: '';
+	background-image: url(../images/white.png); 
+	float: left;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+	margin-left:100px;
+}
+
+.firstB > div::before{
+	content: '';
+	background-image: url(../images/black.png); 
+	float: right;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+	margin-right:100px;
+}
+
+.secondB > div::after{
+	content: '';
+	background-image: url(../images/black.png); 
+	float: left;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+	margin-left:100px;
+}
+
